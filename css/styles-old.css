@@ -83,12 +83,13 @@ border-radius: 2px;
 
 }
 .list-item{
-    padding: 24 0;
+    padding: 24px 0;
 }
 .address{
     font-style: normal;
     margin-left: 332px;
 }
+
 .address-link{
 display: block;
 padding: 24px 0;

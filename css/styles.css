@@ -320,13 +320,18 @@ margin-top: 48px;
     padding: 72px 0;
    text-align:center;
    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url('../images/people-office.jpg');
+    url('../images/hero/hero-s.jpg');
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
    max-width: 320px;
    margin: 0 auto;
 }
+@media (min-resolution: 192dpi){
+.hero{
+ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/hero/hero-s@2x.jpg');
+} }
 .hero-image{
     max-width: 216px;
     align-items: center;
@@ -378,15 +383,29 @@ max-width: 496px;
 margin: auto;
     }
     .hero {
+         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/hero/hero-m.jpg');
         max-width: 768px;
         padding: 112px 0;
     }
+    @media (min-resolution: 192dpi){
+.hero{
+ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/hero/hero-m@2x.jpg');
+} }
 }
 @media screen and (min-width: 1158px) {
     .hero{
+         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/hero/hero-l.jpg');
         padding: 188px 0;
         max-width: 100%;
     }
+    @media (min-resolution: 192dpi){
+.hero{
+ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/hero/hero-l@2x.jpg');
+} }
     .hero-image{
 margin-bottom: 48px;
  }
@@ -489,6 +508,7 @@ line-height: 1.11111;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
+margin-bottom: 72px;
  }
 .secteam-list{
     border-radius: 0 0 4px 4px;
@@ -664,13 +684,14 @@ width: 288px;
 }
     .portfolio-li{
   width: calc((100% - 48px) / 3);
+   box-shadow: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 .app-wrapper{
     position: relative; 
    overflow: hidden;
 }
-.portfolio-li:hover{
+.portfolio-li:hover {
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);  
 }
 .portfolio-li:hover .overlay{
